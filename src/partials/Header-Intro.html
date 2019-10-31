@@ -1,12 +1,12 @@
-<style>
-td {
+<!-- <style>
+td, th, tr, table {
   border: 1px solid black;
 }
-</style>
+</style> -->
 
 <div class="header__background-gradient">
   <!--[if gte mso 9]>
-<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:400px;" fillcolor="#EF7726 ">
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:415px;" fillcolor="#EF7726 ">
 <v:fill type="gradient" color2="#D60D47"/>
 <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
 <![endif]-->
@@ -24,19 +24,21 @@ td {
 
     <row>
       <columns small="4" valign="middle" style="padding-bottom: 0;">
-        <img class="header__logo" src="{{root}}assets/img/codurance-logo.png" alt="Codurance logo"/>
+        <a href="https://codurance.com/">
+          <img class="header__logo" src="{{root}}assets/img/codurance-logo.png" alt="Codurance logo"/>
+        </a>
       </columns>
       <columns small="4" style="padding-bottom: 0;">
 
         <table cellpadding="0" cellspacing="0" border="0" width="135" style="width: 135px!important; Margin-left: auto;">
             <tr>
-              <td class="header__date text-center" background="assets/img/header-year-2019.png">
+              <td class="header__date text-center">
                 <!--[if gte mso 9]>
                 <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
                   <v:fill type="frame" src="assets/img/header-year-2019.png" />
                   <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
                 <![endif]-->
-                <div class="header__date-text">
+                <div class="header__date-text" mc:edit="newsletter_date">
                     *|DATE:d M|*
                 </div>
                 <!--[if gte mso 9]>
@@ -45,8 +47,29 @@ td {
                 <![endif]-->
               </td>
             </tr>
-          </table>
+        </table>
 
+      </columns>
+    </row>
+
+    <row class="collapse">
+      <columns small="8" style="padding-bottom: 0;">
+        <img class="header__image" src="{{root}}assets/img/header-image-placeholder.jpg" alt="" mc:edit="header_image"/>
+      </columns>
+    </row>
+
+    <row style="background: #ffffff;">
+      <columns small="8" style="padding-bottom: 0;">
+        <spacer size="30"></spacer>
+        <p class="header__intro-text" mc:edit="header_intro_text">
+            Hello,<br/><br/>
+
+            It has been a busy few months for the team and we’re pleased to bring the newsletter back, including some useful resources for you to take advantage of, such as an article on ‘The Fine Art of Fast Development’, a talk on building ‘Sustainable and Empathetic Cross-Functional Teams’ and, if you haven’t already checked it out yet, Katalyst, our new handy skill-honing tool. Please feel free to share the newsletter with your colleagues for their own learning and development!<br/><br/>
+
+            Until next time,<br/>
+            <b>The Codurance team</b>
+        </p>
+        <spacer size="50"></spacer>
       </columns>
     </row>
   </container>

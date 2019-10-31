@@ -17,3 +17,7 @@ table, th, tbody, tr, td {
   background: transparent;
   background-color: transparent;
 }
+
+td {
+  hyphens: initial;
+}
