@@ -18,6 +18,10 @@
 
   &__logo {
     width: 151px;
+    max-width: 151px;
+    @include media {
+      width: 151px !important;
+    }
   }
 
   &__date {
@@ -41,9 +45,15 @@
   &__image {
     width: 100%;
     max-width: $global-width;
+    @include media {
+      width: 100% !important;
+    }
   }
 
   &__intro-text {
     margin: 0;
   }
 }
+
+
+
