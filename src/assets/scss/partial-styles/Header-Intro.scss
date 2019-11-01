@@ -46,7 +46,8 @@
     width: 100%;
     max-width: $global-width;
     @include media {
-      width: 100% !important;
+      width: 100%;
+      max-width: 100%;
     }
   }
 
