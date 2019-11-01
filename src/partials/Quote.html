@@ -1,0 +1,35 @@
+<!-- <style>
+  table, th, tr, td {
+    border: 0.5px solid black;
+  }
+</style> -->
+
+<div mc:hideable style="width: 100%;">
+  <container mc:repeatable="Quote-Component">
+    <row>
+      <columns small="8" style="padding-bottom: 0;">
+        <hr/>
+      </columns>
+    </row>
+
+    <row>
+
+        <columns large="2" small="3" style="padding-bottom: 0; vertical-align: top;">
+            <img class="quote__quote-marks" src="{{root}}assets/img/quote-marks.jpg" alt="" />
+            <hr class="quote__hr" />
+            <span class="quote__author-name" mc:editable="quote-author"><b>Sandro Mancuso</b></span>
+            <span class="quote__author-info" mc:editable="quote-author-information">Managing Director,<br />Codurance</span>
+        </columns>
+
+        <columns large="6" small="5" style="padding-bottom: 0; vertical-align: top;">
+          <div mc:edit="quote-text" class="quote__text">
+            <p>The Codurance Colour Palette offers a sense of our bold and flexible personality plus brings an element of stability and consistency to all our communications.</p>
+        </div>
+        </columns>
+
+    </row>
+    <row>
+      <spacer size="50"></spacer>
+    </row>
+  </container>
+</div>
