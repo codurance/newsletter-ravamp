@@ -1,0 +1,37 @@
+<!-- <style>
+  table, th, tr, td {
+    border: 0.5px solid black;
+  }
+</style> -->
+
+
+<container mc:repeatable="Plug-Component" mc:variant="Image Left">
+  <row>
+    <columns small="8">
+      <hr/>
+    </columns>
+  </row>
+
+  <row class="collapse">
+
+      <columns class="plug__image-border--left" large="4" small="8" style="vertical-align: middle;">
+       <!-- <div class="plug__image-container" background="{{root}}assets/img/gradient-frame.jpg";> -->
+          <!-- <div class="plug__image-border--left"> -->
+            <img class="plug__image--left" src="https://via.placeholder.com/255x305" alt="" />
+          <!-- </div> -->
+       <!-- </div> -->
+      </columns>
+
+      <columns large="4" small="8" mc:edit="plug-text" style="vertical-align: middle; padding-bottom: 0;">
+        <div mc:edit class="plug__text">
+          <p>Creating well-crafted software and contributing to best practice is our passion and therefore we have created <a class="inline-link" href=""><b>Katalyst</b></a>, a portal to share some of the programming problems that we use to teach and practice software development.
+          <br /><br />
+          We have selected Katas that we believe will improve skills, in fundamental areas such as test-driven development and object-oriented design. Katas vary in skill level, in the language the crafter is most familiar with - we’d love to hear your feedback!</p>
+      </div>
+      </columns>
+
+  </row>
+  <row>
+    <spacer size="50"></spacer>
+  </row>
+</container>

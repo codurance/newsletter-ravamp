@@ -1,0 +1,38 @@
+.plug {
+  &__image-border--left {
+    background: url('../../assets/img/gradient-frame.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include media {
+      text-align: center;
+      Margin-bottom: 20px!important;
+      padding-top: 20px;
+      padding-bottom: 20px!important;
+    }
+  }
+
+  &__image--left {
+    width: 100%;
+    max-width: 255px;
+    height: auto;
+    Margin-left: 20px;
+    @include media {
+      width: 90% !important;
+      max-width: 90% !important;
+      Margin-left: auto;
+      Margin-right: auto;
+    }
+  }
+
+  &__text {
+    padding-right: 20px;
+    @include media {
+      padding-left: 20px;
+    }
+  }
+  &__text p {
+    Margin-bottom: 0;
+  }
+}
