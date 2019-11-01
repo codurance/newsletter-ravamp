@@ -18,6 +18,10 @@ table, th, tbody, tr, td {
   background-color: transparent;
   vertical-align: inherit;
 }
+table.body {
+  background: transparent;
+  background-color: transparent;
+}
 
 td {
   hyphens: initial;

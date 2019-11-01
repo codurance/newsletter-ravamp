@@ -21,15 +21,26 @@
 
   <body class="fallback-text">
     <span class="preheader">{{ description }}</span>
-    <table class="body">
-      <tr>
-        <td class="center" align="center" valign="top">
-          <center>
-            {{> body}}
-          </center>
-        </td>
-      </tr>
-    </table>
+
+    <div class="header__background-gradient">
+      <!--[if gte mso 9]>
+      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:415px;" fillcolor="#EF7726 ">
+      <v:fill type="gradient" color2="#D60D47"/>
+      <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+      <![endif]-->
+
+      <table class="body">
+        <tr>
+          <td class="center" align="center" valign="top">
+            <center>
+              {{> body}}
+            </center>
+          </td>
+        </tr>
+      </table>
+
+      <!--[if gte mso 9]>/v:textbox/v:rect<![endif]-->
+    </div>
 
     <!-- prevent Gmail on iOS font size manipulation -->
     <div
