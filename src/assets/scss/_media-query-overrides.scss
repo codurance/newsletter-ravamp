@@ -81,7 +81,7 @@
     table.body th.small-offset-#{$i} {
       //1.5 takes in effect a whole empty cell.
       margin-left: -zf-grid-calc-pct($i, $grid-column-count) !important;
-      Margin-left: -zf-grid-calc-pct($i, $grid-column-count) !important;
+      margin-left: -zf-grid-calc-pct($i, $grid-column-count) !important;
     }
   }
 

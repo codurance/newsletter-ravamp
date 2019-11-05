@@ -7,7 +7,7 @@
     padding-bottom: 20px;
     @include media {
       text-align: center;
-      Margin-bottom: 20px!important;
+      margin-bottom: 20px!important;
       padding-top: 20px;
       padding-bottom: 20px!important;
     }
@@ -17,12 +17,12 @@
     width: 100%;
     max-width: 255px;
     height: auto;
-    Margin-left: 20px;
+    margin-left: 20px;
     @include media {
       width: 90% !important;
       max-width: 90% !important;
-      Margin-left: auto;
-      Margin-right: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -33,6 +33,6 @@
     }
   }
   &__text p {
-    Margin-bottom: 0;
+    margin-bottom: 0;
   }
 }

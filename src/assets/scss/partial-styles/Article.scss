@@ -1,12 +1,12 @@
 .article {
   &__title {
     color: $primary-color;
-    Margin-bottom: 20px !important;
+    margin-bottom: 20px !important;
     line-height: 46px;
   }
   &__author {
     display: block;
-    Margin-bottom: 50px !important;
+    margin-bottom: 50px !important;
     font-weight: $header-font-weight;
   }
 }
