@@ -18,8 +18,10 @@
   &__logo {
     width: 151px;
     max-width: 151px;
+    padding-left: 20px;
     @include media {
       width: 151px !important;
+      padding-left: 10 !important;
     }
   }
 
@@ -36,6 +38,13 @@
     background-position: center center;
     vertical-align: middle;
 
+    &-spacer {
+      width: 20px;
+      @include media {
+        width: 10 !important;
+      }
+    }
+
     &-text {
       padding-top: 4px;
     }
@@ -46,7 +55,7 @@
     max-width: $global-width;
     @include media {
       width: 100%;
-      max-width: 100%;
+      max-width: 100% !important;
     }
   }
 
@@ -54,6 +63,5 @@
     margin: 0;
   }
 }
-
 
 
