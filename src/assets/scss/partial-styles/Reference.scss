@@ -29,3 +29,21 @@
     margin-bottom: 0 !important;
   }
 }
+
+@media only screen and (min-width:1px) {
+  .button td a {
+    Margin:0;
+    border:0 solid #ef7726;
+    border-radius:3px;
+    color:#fefefe!important;
+    display:inline-block;
+    font-family:proxima-nova,Helvetica,Arial,sans-serif;
+    font-size:16px;
+    font-weight:700;
+    line-height:1.5;
+    margin:0;
+    padding:8px 26px 8px 26px;
+    text-align:left;
+    text-decoration:none;
+  }
+}
