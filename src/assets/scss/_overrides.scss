@@ -36,7 +36,7 @@ hr {
 
 @media only screen and (min-width: 1px) {
   .inline-link a {
-    font-weight: $header-font-weight;
+    font-weight: $global-font-weight;
     color: $primary-color;
     text-decoration: underline;
   }
