@@ -1,6 +1,5 @@
 .reference {
-  &__header-border--pipe,
-  &__header-border--underline {
+  &__header-border {
     background-color: $secondary-color;
     background-image: linear-gradient(
       45deg,
@@ -8,23 +7,24 @@
       $primary-color 100%
     );
     background: linear-gradient(45deg, $secondary-color 0%, $primary-color 100%);
-  }
-  &__header-border--pipe {
-    width: 5px;
-    height: 60px;
-    @include media {
-      margin-left: 20px;
+    &--pipe {
+      width: 5px;
+      height: 60px;
+      @include media {
+        margin-left: 20px;
+      }
+    }
+    &--underline {
+      width: 60px;
+      height: 10px;
+      font-size: 1px;
+      line-height: 10px;
+      @include media {
+        margin-left: 20px;
+      }
     }
   }
-  &__header-border--underline {
-    width: 60px;
-    height: 10px;
-    font-size: 1px;
-    line-height: 10px;
-    @include media {
-      margin-left: 20px;
-    }
-  }
+
   &__header--pipe {
     padding-left: 15px;
     margin-bottom: 0 !important
