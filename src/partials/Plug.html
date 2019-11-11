@@ -1,3 +1,5 @@
+<!-- IMAGE LEFT VARIANT -->
+
 <container mc:repeatable="component" mc:variant="Plug - Image Left">
   <row>
     <columns small="8" style="padding-bottom: 0;">
@@ -13,7 +15,7 @@
           <v:fill type="frame" src="https://gallery.mailchimp.com/95b09f6a86b4c4551e15d7cc3/images/ab3970ea-8f2d-477b-9660-d52aec9e4214.jpg" />
           <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
           <![endif]-->
-          <img class="plug__image--left" src="https://via.placeholder.com/255x305" alt="" mc:edit="plug-image" />
+          <img class="plug__image--left" src="https://via.placeholder.com/255x305" alt="" mc:edit="plug-image-onLeft" />
           <!--[if gte mso 9]>
           </v:textbox>
           </v:rect>
@@ -21,7 +23,48 @@
       </columns>
 
       <columns large="4" small="8" style="vertical-align: middle; padding-bottom: 0;">
-        <div mc:edit="plug-text" class="plug__text inline-link">
+        <div mc:edit="plug-text-onRight" class="plug__text--onRight inline-link">
+          <p>Creating well-crafted software and contributing to best practice is our passion and therefore we have created <a class="inline-link" href=""><b>Katalyst</b></a>, a portal to share some of the programming problems that we use to teach and practice software development.
+          <br /><br />
+          We have selected Katas that we believe will improve skills, in fundamental areas such as test-driven development and object-oriented design. Katas vary in skill level, in the language the crafter is most familiar with - we’d love to hear your feedback!</p>
+      </div>
+      </columns>
+
+  </row>
+
+  <spacer size="50"></spacer>
+
+</container>
+
+
+
+
+<!-- IMAGE RIGHT VARIANT -->
+
+<container mc:repeatable="component" mc:variant="Plug - Image Right">
+  <row>
+    <columns small="8" style="padding-bottom: 0;">
+      <hr/>
+    </columns>
+  </row>
+
+  <row class="collapse" dir="rtl">
+
+      <columns class="plug__image-border--right" large="4" small="8" style="vertical-align: middle;" dir="ltr">
+          <!--[if gte mso 9]>
+          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+          <v:fill type="frame" src="https://gallery.mailchimp.com/95b09f6a86b4c4551e15d7cc3/images/ab3970ea-8f2d-477b-9660-d52aec9e4214.jpg" />
+          <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+          <![endif]-->
+          <img class="plug__image--right" src="https://via.placeholder.com/255x305" alt="" mc:edit="plug-image-onRight" />
+          <!--[if gte mso 9]>
+          </v:textbox>
+          </v:rect>
+          <![endif]-->
+      </columns>
+
+      <columns large="4" small="8" style="vertical-align: middle; padding-bottom: 0;" dir="ltr">
+        <div mc:edit="plug-text-onLeft" class="plug__text--onLeft inline-link">
           <p>Creating well-crafted software and contributing to best practice is our passion and therefore we have created <a class="inline-link" href=""><b>Katalyst</b></a>, a portal to share some of the programming problems that we use to teach and practice software development.
           <br /><br />
           We have selected Katas that we believe will improve skills, in fundamental areas such as test-driven development and object-oriented design. Katas vary in skill level, in the language the crafter is most familiar with - we’d love to hear your feedback!</p>

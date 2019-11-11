@@ -1,19 +1,34 @@
 .plug {
   &__image-border--left {
     background: url('https://gallery.mailchimp.com/95b09f6a86b4c4551e15d7cc3/images/ab3970ea-8f2d-477b-9660-d52aec9e4214.jpg');
+  }
+
+  &__image-border--right {
+    background: url('https://gallery.mailchimp.com/95b09f6a86b4c4551e15d7cc3/images/73ff4195-e037-42ba-8d09-3585b14e8a76.jpg');
+  }
+
+  &__image-border--left,
+  &__image-border--right {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-top: 20px;
     padding-bottom: 20px;
-    @include media {
-      text-align: center;
-      margin-bottom: 20px!important;
-      padding-top: 20px;
-      padding-bottom: 20px!important;
+      @include media {
+        text-align: center;
+        margin-bottom: 20px!important;
+        padding-top: 20px;
+        padding-bottom: 20px!important;
+      }
     }
-  }
 
   &__image--left {
+    margin-left: 20px;
+  }
+  &__image--right {
+    margin-right: 20px;
+  }
+  &__image--left,
+  &__image--right {
     width: 100%;
     max-width: 255px;
     height: auto;
@@ -26,10 +41,16 @@
     }
   }
 
-  &__text {
+  &__text--onRight {
     padding-right: 20px;
     @include media {
       padding-left: 20px;
+    }
+  }
+  &__text--onLeft {
+    padding-left: 20px;
+    @include media {
+      padding-right: 20px;
     }
   }
   &__text p {
