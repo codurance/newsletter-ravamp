@@ -1,41 +1,72 @@
+// Corner Frame [Base]
+
 .article {
   &__title {
     color: $primary-color;
     margin-bottom: 20px !important;
     line-height: 46px;
-
-    &--stacked-boxes {
-      margin-bottom: 0px !important;
-      color: $white;
-      padding: 20px;
-      display: inline-block;
-      background-color: $secondary-color;
-      background: url('https://gallery.mailchimp.com/95b09f6a86b4c4551e15d7cc3/images/f2d29df3-89a6-4f7a-9281-0b8ed53928ee.jpg');
-      background-image: url('https://gallery.mailchimp.com/95b09f6a86b4c4551e15d7cc3/images/f2d29df3-89a6-4f7a-9281-0b8ed53928ee.jpg');
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-
   }
   &__author {
     display: block;
     text-align: left;
     margin-bottom: 50px !important;
     font-weight: $header-font-weight;
+  }
+}
 
-    &--stacked-boxes {
-      margin-bottom: 30px !important;
-      color: $white;
-      display: inline-block;
-      padding: 20px;
-      background-color: $primary-color;
-      background: url('https://gallery.mailchimp.com/95b09f6a86b4c4551e15d7cc3/images/2d76b7ff-27ac-44d2-8efe-f4f444d6689f.jpg');
-      background-image: url('https://gallery.mailchimp.com/95b09f6a86b4c4551e15d7cc3/images/2d76b7ff-27ac-44d2-8efe-f4f444d6689f.jpg');
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      background-position: 0 0;
+// Stacked Boxes
+
+.article {
+  &__header-image {
+    width: 560px;
+    display: inline-block;
+    @include media {
+      width: 100% !important;
     }
+  }
+  &__title--stacked-boxes {
+    margin-bottom: 0px !important;
+    color: $white;
+    padding: 20px;
+    display: inline-block;
+  }
 
+  &__author--stacked-boxes {
+    margin-bottom: 30px !important;
+    color: $white;
+    display: inline-block;
+    padding: 20px;
+    background-color: $primary-color;
+    background: url('https://gallery.mailchimp.com/95b09f6a86b4c4551e15d7cc3/images/2d76b7ff-27ac-44d2-8efe-f4f444d6689f.jpg');
+    background-image: url('https://gallery.mailchimp.com/95b09f6a86b4c4551e15d7cc3/images/2d76b7ff-27ac-44d2-8efe-f4f444d6689f.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+// Side By Side
+
+.article {
+  &__title--side-by-side {
+    color: $white;
+    padding: 20px;
+    margin-bottom: 0 !important;
+
+  }
+
+  &__author--side-by-side {
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-bottom: 0px !important;
+  }
+
+  &__primary-background {
+    background-color: $secondary-color;
+    background: url('https://gallery.mailchimp.com/95b09f6a86b4c4551e15d7cc3/images/f2d29df3-89a6-4f7a-9281-0b8ed53928ee.jpg');
+    background-image: url('https://gallery.mailchimp.com/95b09f6a86b4c4551e15d7cc3/images/f2d29df3-89a6-4f7a-9281-0b8ed53928ee.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 }
