@@ -17,7 +17,7 @@
 // Stacked Boxes
 
 .article {
-  &__header-image {
+  &__header-image--stacked-boxes{
     width: 560px;
     display: inline-block;
     @include media {
@@ -52,7 +52,10 @@
     color: $white;
     padding: 20px;
     margin-bottom: 0 !important;
+  }
 
+  &__header-image--side-by-side {
+    display: block !important;
   }
 
   &__author--side-by-side {
